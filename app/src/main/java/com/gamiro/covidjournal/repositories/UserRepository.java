@@ -39,7 +39,7 @@ public class UserRepository {
 
     private static final int MAXIMUM_USERS = 50;
     private static final String TAG = "UserRepository";
-    public static final String APP_SERVER_BASE_URL = "https://app.covidjournal.net/";
+    public static final String APP_SERVER_BASE_URL = "https://www.covidjournalnetlify.app/app/";
 
     private MutableLiveData<UserData> userLiveData;
     private MutableLiveData<HashMap<String, UserData>> allUsers;

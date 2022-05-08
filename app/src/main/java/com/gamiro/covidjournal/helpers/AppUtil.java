@@ -70,10 +70,10 @@ public class AppUtil {
     public static final String INTRO_OPENED = "isIntroOpened";
 
     // Links to website
-    public static final String LINK_WEBSITE = "https://www.covidjournal.net/";
-    public static final String LINK_PRIVACY = "https://www.covidjournal.net/policies/privacy.html";
-    public static final String LINK_TERMS = "https://www.covidjournal.net/policies/terms.html";
-    public static final String LINK_FAQ = "https://www.covidjournal.net/faq.html";
+    public static final String LINK_WEBSITE = "https://www.covidjournal.netlify.app/";
+    public static final String LINK_PRIVACY = "https://www.covidjournal.netlify.app/policies/privacy.html";
+    public static final String LINK_TERMS = "https://www.covidjournal.netlify.app/policies/terms.html";
+    public static final String LINK_FAQ = "https://www.covidjournal.netlify.app/faq.html";
 
     // Remember email
     public static final String REMEMBER_EMAIL = "rememberEmail";
