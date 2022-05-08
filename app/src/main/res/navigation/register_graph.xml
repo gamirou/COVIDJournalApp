@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_graph"
+    app:startDestination="@id/firstRegisterFragment">
+    <fragment
+        android:id="@+id/firstRegisterFragment"
+        android:name="com.gamiro.covidjournal.fragments.auth.FirstRegisterFragment"
+        android:label="fragment_first_register"
+        tools:layout="@layout/fragment_first_register" >
+        <action
+            android:id="@+id/action_firstRegisterFragment_to_secondRegisterFragment"
+            app:destination="@id/secondRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondRegisterFragment"
+        android:name="com.gamiro.covidjournal.fragments.auth.SecondRegisterFragment"
+        android:label="fragment_second_register"
+        tools:layout="@layout/fragment_second_register" >
+        <action
+            android:id="@+id/action_secondRegisterFragment_to_datePickerFragment"
+            app:destination="@id/datePickerFragment" />
+        <argument
+            android:name="minDate"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="maxDate"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/datePickerFragment"
+        android:name="com.gamiro.covidjournal.fragments.dialog.DatePickerFragment"
+        android:label="DatePickerFragment" >
+        <argument
+            android:name="minDate"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="maxDate"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="dateKey"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+</navigation>

@@ -1,0 +1,209 @@
+<resources>
+    <string name="app_name_with_space">COVID Journal</string>
+    <string name="app_name">COVIDJournal</string>
+    <string name="login_capitals">LOGIN</string>
+    <string name="login_short">Log in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_name">Name</string>
+    <string name="register_short">Register here</string>
+    <string name="welcome_text">Welcome to COVIDJournal</string>
+    <string name="action_settings">Settings</string>
+
+    <!--  Navigation drawer  -->
+    <string name="nav_home">HOME</string>
+    <string name="nav_person">Add person</string>
+    <string name="nav_activity">Add activity</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_logout">Log out</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_share">Invite others</string>
+    <string name="nav_rate_us">Rate us</string>
+    <string name="nav_feed">FEED</string>
+    <string name="nav_countries">COUNTRIES</string>
+
+    <string name="slogan">Track the coronavirus and save lives</string>
+
+    <!-- Profile corona virus strings -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_dob">Date of birth</string>
+    <string name="profile_city">City</string>
+    <string name="profile_hasCorona">Do you have the coronavirus?</string>
+    <string name="profile_tested">Have you been tested?</string>
+    <string name="profile_description">Can you tell us if you have symptoms? If you do, list them below</string>
+    <string name="profile_corona_start_date">When did you find out?</string>
+    <string name="prompt_apply_changes">Apply Changes</string>
+    <string name="confirmed_cases">Confirmed cases</string>
+    <string name="active_cases">Active cases</string>
+    <string name="recovered">Recovered</string>
+    <string name="deceased">Deceased</string>
+    <string name="tests">Tests</string>
+    <string name="today_cases">Today\'s cases</string>
+    <string name="mortality_rate">Mortality rate</string>
+    <string name="cases_per_million">Cases per million</string>
+    <string name="critical">Critical</string>
+    <string name="today_deaths">Today\'s deaths</string>
+    <string name="how_does_it_work">HOW DOES IT WORK</string>
+    <string name="remember_me">REMEMBER ME</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="sign_up_capitals">SIGN UP</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="click_to_upload_a_profile_picture">Click to upload a profile picture</string>
+    <string name="prompt_read_more"><![CDATA[Read more >]]></string>
+    <string name="friends">Friends</string>
+    <string name="nav_add_friend">Add friend</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_other">Other</string>
+    <string name="choose_your_gender">Choose your gender</string>
+    <string name="choose_your_country">Choose your country</string>
+    <string name="choose_your_city">Choose your city</string>
+    <string name="city">City</string>
+    <string name="prompt_dob">What is your date of birth?</string>
+    <string name="next">Next</string>
+    <string name="prompt_title">Title</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="enter_date">Enter date</string>
+    <string name="enter_time">Enter time</string>
+    <string name="enter_location">Enter location</string>
+    <string name="activity_description">Activity Description</string>
+    <string name="when_activity">When did you do this activity?</string>
+
+    <string name="terms_privacy">I agree to the Terms and Conditions and the Privacy Policy</string>
+<!--    <string name="terms_privacy">I agree to the Privacy Policy</string>-->
+    <string name="over_18">I am over 18</string>
+
+    <!--  Spinner filter for countries fragment  -->
+    <string name="user_test_info">
+        The application works on these tests. If you have been notified that one of your contacts has been tested positive, we recommend you to order a test.\n\n
+        You can also order one if you think it is necessary. Once you get the result please edit the test and add your result.\n\n
+        Then we can notify your contacts. Early diagnosis will save your dear ones\' lives with this simple system.\n\n
+        You will need to enter the date when you ordered the test, the result once you got it and date when you found out your result.\n\n
+        Please do not enter fake information, we can remove your account forever.\n\n
+        PENDING - you are waiting for your result, do not forget to edit the test when you get the result\n
+        NEGATIVE - you have been tested negative\n
+        POSITIVE - you have been tested positive\n
+        UNKNOWN - your result in unclear or unknown, make sure to take the test again in 5 days
+    </string>
+
+    <!--  SYMPTOMS  -->
+    <string name="describe_symptoms">
+        Describe the symptoms you are currently experiencing.
+    </string>
+    <string name="symptoms_fever">Do you have a fever?</string>
+    <string name="symptoms_temperature">If you are able to measure it, what is your temperature?</string>
+    <string name="symptoms_cough">Do you have a persistent cough
+        (coughing a lot for more than an hour, or 3 or more coughing episodes in 24 hours)?
+    </string>
+    <string name="symptoms_fatigue">Are you experiencing unusual fatigue?</string>
+    <string name="symptoms_headache">Do you have a headache?</string>
+    <string name="symptoms_lack_of_taste">Are you experiencing any lack of smell or taste?</string>
+    <string name="symptoms_sore_throat">Do you have or have you had a sore throat recently?</string>
+    <string name="symptoms_chills">Are you experiencing chills?</string>
+    <string name="symptoms_ache">Do you have muscle or body aches?</string>
+    <string name="symptoms_vomit">Are you experiencing nausea or vomitting?</string>
+
+    <!--  Symptoms that will prompt the user to call 112/999 or any emergency number -->
+    <string name="describe_severe_symptoms">If you are experiencing the following symptoms, you should seek medical assistance.</string>
+    <string name="symptoms_breathing">Do you have shortness of breath or trouble breathing?</string>
+    <string name="symptoms_chest_pain">Are you experiencing persistent pain or pressure in the chest?</string>
+    <string name="symptoms_awake">Is it hard for you to stay awake?</string>
+    <string name="symptoms_lips">Do you have bluish lips or face?</string>
+
+    <!--  Where are you right now?  -->
+    <string name="where_are_you">Where are you right now?</string>
+    <string name="home_no_symptoms_tested">I am at home. I have been tested positive and I am asymptomatic</string>
+    <string name="home_suspect_contact">I am in self-isolation. I do not have symptoms, but I have been in contact with a person tested positive</string>
+    <string name="home_symptoms">I am at home with suspected COVID symptoms. I have not been tested yet</string>
+    <string name="home_symptoms_tested">I am at home with suspected COVID symptoms. I have been tested positive</string>
+    <string name="i_am_at_hospital">I am at hospital with suspected COVID symptoms</string>
+
+    <!--  Temperature  -->
+    <string name="temperature_sign">\u00B0</string>
+
+    <!--  Number picker titles  -->
+    <string name="people_count">Enter roughly how many people were there</string>
+
+    <!--  Settings  -->
+    <string name="default_notification_channel_id">Notification Channel Id</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="state_on">On</string>
+    <string name="state_off">Off</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_email">Reset Email</string>
+    <string name="edit_profile">Edit Profile</string>
+
+    <!--  Reset password  -->
+    <string name="reset_password_description">You will have to confirm your details again in order to reset your password</string>
+    <string name="verify_email_description">You will have to confirm your details again in order to send an email verification</string>
+
+    <!--  Settings keys  -->
+    <string name="settings_key_notifications">notification_state</string>
+    <string name="settings_key_edit_profile">edit_profile</string>
+    <string name="settings_key_reset_password">reset_password</string>
+    <string name="settings_key_terms">terms_conditions</string>
+    <string name="settings_key_privacy">privacy_policy</string>
+
+    <!--  Settings title  -->
+    <string name="terms_conditions">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="empty_recycler">Oh no! No results given!</string>
+    <string name="how_many_people">People?</string>
+    <string name="forgot_password_capitals">FORGOT PASSWORD</string>
+    <string name="confirm_email">Confirm Email</string>
+    <string name="send_verification_email">Send verification email</string>
+    <string name="enter_temperature">Enter temperature</string>
+    <string name="old_password">Old Password</string>
+    <string name="verify_email">Email not received? Send it again</string>
+    <string name="settings_key_verify_email">verifyEmail</string>
+    <string name="check_website">Check our website</string>
+    <string name="nav_how_to_use">How to use</string>
+    <string name="no_internet_connection_available">No internet connection available!</string>
+
+    <string-array name="input_options">
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="temperature_options">
+        <item>\u2103</item>
+        <item>\u2109</item>
+    </string-array>
+    <string-array name="filters_countries">
+        <item>Most cases</item>
+        <item>Least cases</item>
+
+        <item>Most active cases</item>
+        <item>Least active cases</item>
+
+        <item>Most recovered</item>
+        <item>Least recovered</item>
+
+        <item>Most deaths</item>
+        <item>Least deaths</item>
+
+        <item>Most critical</item>
+        <item>Least critical</item>
+
+        <item>Most tests</item>
+        <item>Least tests</item>
+
+        <item>Most cases per million</item>
+        <item>Least cases per million</item>
+
+        <item>Most today\'s cases</item>
+        <item>Least today\'s cases</item>
+
+        <item>Most today\'s deaths</item>
+        <item>Least today\'s deaths</item>
+
+        <item>Largest mortality rate</item>
+        <item>Lowest mortality rate</item>
+    </string-array>
+    <string-array name="user_test_status">
+        <item>PENDING</item>
+        <item>NEGATIVE</item>
+        <item>POSITIVE</item>
+        <item>UNKNOWN</item>
+    </string-array>
+</resources>

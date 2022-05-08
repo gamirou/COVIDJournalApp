@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.auth.FirstRegisterFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_register_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/choose_your_gender"
+            android:textColor="#020202"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linear_radio_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_register_gender">
+
+            <RadioGroup
+                android:id="@+id/gender_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gender_male" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gender_female" />
+
+                <RadioButton
+                    android:id="@+id/radio_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/gender_other" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_no_fill_gradient"
+            android:text="@string/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_reg_confirm_password" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_reg_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/reg_no_fill_edittext_style"
+            android:hint="@string/prompt_name"
+            android:inputType="textPersonName"
+            app:boxStrokeColor="#000"
+            app:endIconMode="clear_text"
+            app:hintTextColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_radio_gender"
+            app:startIconDrawable="@drawable/ic_person_pin_black_24dp"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorTransparent"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="textPersonName"
+                android:textColor="#000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/reg_no_fill_edittext_style"
+            android:hint="@string/prompt_email"
+            app:boxStrokeColor="#000"
+            app:endIconMode="clear_text"
+            app:hintTextColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_reg_name"
+            app:startIconDrawable="@drawable/ic_person_outline_black_24dp"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorTransparent"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="textEmailAddress"
+                android:textColor="#000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/reg_no_fill_edittext_style"
+            android:hint="@string/prompt_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            app:boxBackgroundColor="#fff"
+            app:boxBackgroundMode="none"
+            app:boxStrokeWidth="0dp"
+            app:hintTextColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_reg_email"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/ic_lock_outline_black_24dp"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorTransparent"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="textPassword"
+                android:textColor="#000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_reg_confirm_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/reg_no_fill_edittext_style"
+            android:hint="@string/confirm_password"
+            app:boxBackgroundColor="#fff"
+            app:boxBackgroundMode="none"
+            app:boxStrokeWidth="0dp"
+            app:hintTextColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_reg_password"
+            app:passwordToggleEnabled="true"
+            app:startIconDrawable="@drawable/ic_lock_outline_black_24dp"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorTransparent"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="textPassword"
+                android:textColor="#000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

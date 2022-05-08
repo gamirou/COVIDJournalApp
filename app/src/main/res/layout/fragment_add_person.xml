@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.user.AddPersonFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_add_person_user"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_user_name"
+            android:layout_marginTop="16dp"
+            app:boxStrokeColor="#000"
+            app:hintTextColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_add_person_title"
+            app:startIconDrawable="@drawable/ic_person_outline_black_24dp"
+            app:startIconTint="#000">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/auto_edit_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox"
+                android:padding="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_add_person_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_no_fill_gradient"
+            android:text="Save contact"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_add_person_location" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_add_person_date"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/enter_date"
+            app:boxStrokeColor="#000"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_add_person_user"
+            app:startIconDrawable="@drawable/ic_baseline_date_range_24"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorTransparent"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_add_person_time"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/enter_time"
+            app:boxStrokeColor="#000"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_add_person_date"
+            app:startIconDrawable="@drawable/ic_baseline_access_time_24"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorTransparent"
+                android:focusableInTouchMode="false"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_add_person_location"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/enter_location"
+            app:boxStrokeColor="#000"
+            android:visibility="gone"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_add_person_time"
+            app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorTransparent"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_add_person_title"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_title"
+            app:boxStrokeColor="#000"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true"
+            app:hintTextColor="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconDrawable="@drawable/ic_add_box_black_24dp"
+            app:startIconTint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorTransparent"
+                android:background="@null"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="#000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

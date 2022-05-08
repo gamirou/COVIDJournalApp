@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_how_to_use"
+            android:title="@string/nav_how_to_use"
+            android:icon="@drawable/ic_baseline_help_24" />
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"/>
+
+        <item
+            android:id="@+id/nav_feed"
+            android:title="@string/nav_feed"
+            android:icon="@drawable/ic_rss_feed_black_24dp"/>
+
+        <item
+            android:id="@+id/nav_countries"
+            android:title="@string/nav_countries"
+            android:icon="@drawable/ic_public_black_24dp"/>
+
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="@string/nav_profile"
+                    android:icon="@drawable/ic_baseline_account_circle_24"/>
+
+                <item
+                    android:id="@+id/nav_friends"
+                    android:title="@string/friends"
+                    android:icon="@drawable/ic_baseline_people_24"/>
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="@string/nav_logout"
+                    android:icon="@drawable/ic_exit_to_app_black_24dp"/>
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Actions">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_add_person"
+                    android:title="@string/nav_person"
+                    android:icon="@drawable/ic_person_outline_black_24dp"/>
+
+                <item
+                    android:id="@+id/nav_add_activity"
+                    android:title="@string/nav_activity"
+                    android:icon="@drawable/ic_work_black_24dp"/>
+
+                <item
+                    android:id="@+id/nav_add_friend"
+                    android:title="@string/nav_add_friend"
+                    android:icon="@drawable/ic_baseline_person_add_24"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Social">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_settings"
+                    android:title="@string/nav_settings"
+                    android:icon="@drawable/ic_settings_black_24dp"/>
+            </group>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="@string/nav_share"
+                    android:icon="@drawable/ic_share_black_24dp" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

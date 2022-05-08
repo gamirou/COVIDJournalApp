@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#22DD72</color>
+    <color name="colorPrimaryLight">#30DD22</color>
+    <color name="colorAccent">#113E3B</color>
+    <color name="colorBackground">#D3E6D9</color>
+    <color name="colorCancel">#FF2424</color>
+    <color name="normalTextColor">#222</color>
+
+    <!--  FAB  -->
+    <color name="fab_color">#eef</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#fff</color>
+
+    <!--  Buttons  -->
+    <color name="orange">#FF9800</color>
+    <color name="white">#fff</color>
+
+    <!--  Start over with colours  -->
+    <!--  Intro Activity  -->
+    <color name="gradient_start_colour">#2ce65a</color>
+    <color name="gradient_end_colour">#039c29</color>
+
+    <!--  Tab indicator and text  -->
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_colour">#000000</color>
+    <color name="intro_description_colour">#656565</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <!--  Choose where you are  -->
+    <color name="where_are_you_item_selected">#8BC34A</color>
+    <color name="where_are_you_item_not_selected">#fff</color>
+</resources>

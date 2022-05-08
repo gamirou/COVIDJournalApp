@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "59517232961",
+    "firebase_url": "https://covidjournal-7fbb6.firebaseio.com",
+    "project_id": "covidjournal-7fbb6",
+    "storage_bucket": "covidjournal-7fbb6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59517232961:android:edc640405eecbed9f323c0",
+        "android_client_info": {
+          "package_name": "com.gamiro.covidjournal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59517232961-rbfn31mpk00fsc6fifj86ip0fnhnp165.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gamiro.covidjournal",
+            "certificate_hash": "a647980fda45511065abdd1b6d4675eeee3f5584"
+          }
+        },
+        {
+          "client_id": "59517232961-go2iiumlulh57vmc2gu95bnpcgss7ebk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9F2srbgMilm_wmNJGKF_zO8bNmbicjPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59517232961-go2iiumlulh57vmc2gu95bnpcgss7ebk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

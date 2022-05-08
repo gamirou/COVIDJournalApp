@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:background="@drawable/btn_no_fill_corners">
+
+            <ImageView
+                android:id="@+id/img_friend_request_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorCancel"
+                app:layout_constraintBottom_toTopOf="@+id/card_friend_request_image"
+                app:layout_constraintEnd_toEndOf="@+id/card_friend_request_image"
+                app:layout_constraintStart_toEndOf="@+id/card_friend_request_image"
+                app:layout_constraintTop_toTopOf="@+id/card_friend_request_image"
+                app:srcCompat="@drawable/ic_cancel_black_24dp" />
+
+            <ImageView
+                android:id="@+id/img_friend_request_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_friend_request_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_friend_request_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_friend_request_name"
+                app:srcCompat="@drawable/ic_baseline_check_circle_24" />
+
+            <TextView
+                android:id="@+id/tv_friend_request_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="TextView"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_friend_request_image" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_friend_request_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.18">
+
+
+                <ImageView
+                    android:id="@+id/img_friend_request_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

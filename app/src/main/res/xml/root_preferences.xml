@@ -1,0 +1,52 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Notifications">
+
+        <SwitchPreferenceCompat
+            app:key="@string/settings_key_notifications"
+            app:title="@string/notifications_title"
+            app:summary="@string/state_on"
+            app:defaultValue="true"
+            app:useSimpleSummaryProvider="true"
+            app:icon="@drawable/ic_baseline_notifications_24"/>
+
+        <!-- TODO: Add more stuff about notifications, maybe -->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/nav_profile">
+
+        <Preference
+            app:key="@string/settings_key_edit_profile"
+            app:title="@string/edit_profile"
+            app:icon="@drawable/ic_baseline_account_circle_24"/>
+
+        <Preference
+            app:key="@string/settings_key_reset_password"
+            app:title="@string/reset_password"
+            app:icon="@drawable/ic_lock_outline_black_24dp"
+            app:summary="You will receive an email verification link"/>
+
+        <Preference
+            app:key="@string/settings_key_verify_email"
+            app:title="Verify Email"
+            app:icon="@drawable/ic_baseline_email_24"/>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Legal stuff">
+
+        <Preference
+            app:icon="@drawable/ic_baseline_edit_24"
+            app:key="@string/settings_key_terms"
+            app:title="@string/terms_conditions" />
+
+        <Preference
+            app:icon="@drawable/ic_baseline_edit_24"
+            app:key="@string/settings_key_privacy"
+            app:title="@string/privacy_policy" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

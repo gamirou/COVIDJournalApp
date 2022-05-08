@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.user.AddFriendFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/add_friend_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search an user"
+            android:drawableEnd="@drawable/ic_search_black_24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/reg_no_fill_edittext_style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.SearchView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_search_users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/search_users" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

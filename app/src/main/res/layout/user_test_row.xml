@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/user_test_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_no_fill_corners"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btn_user_test_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorTransparent"
+            android:drawableStart="@drawable/ic_baseline_check_circle_24"
+            android:text="Save"
+            android:textColor="#323BFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_user_test_date_result" />
+
+        <ImageView
+            android:id="@+id/img_user_test_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:tint="@color/colorAccent"
+            app:layout_constraintTop_toTopOf="@+id/btn_accept_post"
+            app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+        <TextView
+            android:id="@+id/tv_user_test_date_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="When did you get the result?"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_user_test_status" />
+
+        <TextView
+            android:id="@+id/tv_user_test_date_made"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="When did you take it?"
+            android:textColor="#000"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_user_test_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="What is the result?"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_user_test_date_made" />
+
+        <ImageView
+            android:id="@+id/img_user_test_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:tint="@color/colorCancel"
+            app:layout_constraintBottom_toBottomOf="@+id/img_user_test_edit"
+            app:layout_constraintStart_toEndOf="@+id/img_user_test_edit"
+            app:layout_constraintTop_toTopOf="@+id/img_user_test_edit"
+            app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+        <EditText
+            android:id="@+id/edit_user_test_date_made"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/reg_no_fill_edittext_style"
+            android:ems="10"
+            android:padding="4dp"
+            android:hint="Click to enter the date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user_test_date_made" />
+
+        <EditText
+            android:id="@+id/edit_user_test_date_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/reg_no_fill_edittext_style"
+            android:ems="10"
+            android:padding="4dp"
+            android:hint="Click to enter the date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user_test_date_result" />
+
+        <Spinner
+            android:id="@+id/spinner_user_test_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_user_test_status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_user_test_status"
+            app:layout_constraintTop_toTopOf="@+id/tv_user_test_status" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
